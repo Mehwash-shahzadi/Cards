@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing:border-box;
+        }
+        .container{
+        height:100vh;
+        width: 100vw;
+        background-color: #8bc6ec;
+        background-image: linear-gradient(135deg,#8bc6ec 0%, #9599e2 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .card{
+        height: 600px;
+        width: 360px;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+       
+      }
+      .card img{
+        height:30%;
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+       
+      }
+      .textbox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
+       
+      }
+      .textbox p{
+          font-size: 20px;
+      }
+      .amountbox{
+        height: 10%;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        background-color: beige;
+        border: 1px solid black;
+        gap: 20px;
+      }
+      #leftbox{
+       display: flex;
+       flex-direction: row;
+       gap: 20px;
+      }
+      .box1{
+        height: 150px;
+      }
+     
+      #rightbox{
+        font-size: 1.2rem;
+      }
+     
+      button{
+        height: 10%;
+        width: 90%;
+        font-size: 1.2rem;
+        color: white;
+        background-color: rgb(23, 23, 61);
+      }
+      a{
+        font-size: 1.2rem;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+           <img src="stt.jpeg" >
+           <div class="textbox">
+            <h2>Order Summary</h2>
+            <p>Lorem ipsum dolor sit amet consectetur
+               adipisicing elit. Velit corporis vel nam laboriosam nesciunt earum commodi numquam, minima quam alias?</p>
+        </div>
+        <div class="amountbox">
+          <div id="leftbox">
+              <div class="box1">
+                <img src="music icon.png" >
+              </div>
+              <div class="box2">
+                <p>Annual Plan</p>
+                <p>$99.9/years</p>
+              </div>
+          </div>
+          <div id="rightbox">
+            Cancel
+          </div>
+        </div>
+        <button>process to payment</button>
+        <a href="#">Cancel Order</a>
+        </div>
+        
+    </div>
+</body>
+</html>
